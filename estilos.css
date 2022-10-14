@@ -1,0 +1,70 @@
+h1{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    height: 100px;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.miniatura{
+    top: 100px;
+    width: 150px;
+    height: 188px;
+    filter: grayscale(90%);
+    transition: 3s;
+}
+.miniatura:hover{
+    filter: grayscale(0%);
+}
+aside{
+    width: 200px;
+    height: 100%;
+    position: absolute;
+    overflow: auto;
+    margin-left: 20px;
+}
+main{
+    display: flex;
+    width: 100%;
+}
+section{
+    display: flex;
+    width: 100%;
+    margin-left: 250px;
+}
+article{
+    width: 50%;
+}
+article img{
+    width: 95%;
+    height: 100%;
+}
+article h1{
+    font-weight: 700;
+    font-size: 3rem;
+}
+article h2{
+    text-align: center;
+}
+article h3{
+    text-align: center;
+    font-weight: 200;
+}
+article p{
+    text-align: left;
+    font-weight: 200;
+}
+
+button{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 20%;
+    background: #4fb2b2;
+    font-weight: 700;
+}
+button:hover{
+    background: #439b9b;
+}
