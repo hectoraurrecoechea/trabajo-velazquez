@@ -13,7 +13,7 @@ body{
     width: 150px;
     height: 188px;
     filter: grayscale(90%);
-    transition: 3s;
+    transition: 1s;
 }
 .miniatura:hover{
     filter: grayscale(0%);
@@ -67,4 +67,16 @@ button{
 }
 button:hover{
     background: #439b9b;
+}
+
+
+.tabs_toggle{
+    display: flex;
+    cursor: pointer;
+}
+.tabs_content{
+    display: none;
+}
+.tabs_content.is-active{
+    display: block;
 }
