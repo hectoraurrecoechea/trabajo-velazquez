@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
 <h1>Cuadros de Velazquez</h1>
 
 <main class="tabs">
@@ -19,7 +20,7 @@
     </aside>
 
     <section class="tabs_content is-active">
-        <article><img src="DOCUMENTOS/practica01/practica01/breda.jpg"></article>
+        <article class="modal-container"><img src="DOCUMENTOS/practica01/practica01/breda.jpg" onclick="openFulImg(this.src)"></article>
         <article>
             <h1>LA RENDICIÓN DE BREDA</h1>
             <h3>1634-35</h3>
@@ -30,7 +31,7 @@
     </section>
 
     <section class="tabs_content">
-        <article><img src="DOCUMENTOS/practica01/practica01/venus.jpg"></article>
+        <article class="modal-container"><img src="DOCUMENTOS/practica01/practica01/venus.jpg" onclick="openFulImg(this.src)"></article>
         <article>
             <h1>VENUS DEL ESPEJO</h1>
             <h3>1644-1648</h3>
@@ -41,7 +42,7 @@
     </section>
 
     <section class="tabs_content">
-        <article><img src="DOCUMENTOS/practica01/practica01/meninas.jpg"></article>
+        <article class="modal-container"><img src="DOCUMENTOS/practica01/practica01/meninas.jpg" onclick="openFulImg(this.src)"></article>
         <article>
             <h1>LAS MENINAS</h1>
             <h3>1616-1660</h3>
@@ -52,7 +53,7 @@
     </section>
 
     <section class="tabs_content">
-        <article><img src="DOCUMENTOS/practica01/practica01/vulcano.jpg"></article>
+        <article class="modal-container"><img src="DOCUMENTOS/practica01/practica01/vulcano.jpg" onclick="openFulImg(this.src)"></article>
         <article>
             <h1>LA FRAGUA DE VULCANO</h1>
             <h3>1630</h3>
@@ -63,7 +64,7 @@
     </section>
 
     <section class="tabs_content">
-        <article><img src="DOCUMENTOS/practica01/practica01/inocencio.jpg"></article>
+        <article class="modal-container"><img src="DOCUMENTOS/practica01/practica01/inocencio.jpg" onclick="openFulImg(this.src)"></article>
         <article>
             <h1>EL PAPA INOCENCIO X</h1>
             <h3>1650</h3>
@@ -73,6 +74,10 @@
         </article>
     </section>
 </main>
+<div class="ful-img" id="fulImgBox">
+    <img src="DOCUMENTOS/practica01/practica01/breda.jpg" id="fulImg">
+    <span onclick="closeImg()">X</span>
+</div>
 <script src="javaScript.js"></script>
 </body>
 </html>
