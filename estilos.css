@@ -27,6 +27,7 @@ aside{
 main{
     display: flex;
     width: 100%;
+    position: -webkit-sticky;
 }
 section{
     display: flex;
@@ -55,13 +56,16 @@ article h3{
 article p{
     text-align: left;
     font-weight: 200;
+    font-size: 1.5em;
+    margin-left: 5%;
+    margin-right: 15%;
 }
 
 button{
     border: none;
     border-radius: 10px;
-    padding: 10px;
-    width: 20%;
+    padding: 20px;
+    width: 30%;
     background: #97c1c0;
     font-weight: 700;
     margin: auto;
